@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Join Now</title>
+<title>Official Community Access</title>
+
+<meta name="description" content="Join our official community for updates and announcements.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -15,11 +17,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1548430126958206');
+fbq('init', '1049800377475498');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1548430126958206&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1049800377475498&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
@@ -28,121 +30,217 @@ src="https://www.facebook.com/tr?id=1548430126958206&ev=PageView&noscript=1"
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:Segoe UI,Arial,sans-serif;
 }
 
 body{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     overflow:hidden;
-    background:black;
+    background:#050816;
 }
 
 .bg{
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,215,0,.15),transparent 30%),
+    radial-gradient(circle at 80% 80%,rgba(0,255,255,.12),transparent 30%),
+    linear-gradient(135deg,#020617,#0f172a,#111827);
+}
+
+.bg::before{
+    content:"";
     position:absolute;
-    width:100%;
-    height:100%;
-    background:url('photo.jpg') center/cover no-repeat;
-    filter:blur(12px) brightness(0.6);
-    transform:scale(1.1);
+    width:500px;
+    height:500px;
+    background:rgba(255,215,0,.08);
+    border-radius:50%;
+    filter:blur(120px);
+    top:-150px;
+    left:-100px;
+}
+
+.bg::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:rgba(0,255,255,.06);
+    border-radius:50%;
+    filter:blur(120px);
+    bottom:-150px;
+    right:-100px;
 }
 
 .card{
     position:relative;
-    z-index:2;
-    text-align:center;
+    z-index:10;
+    width:90%;
+    max-width:500px;
     padding:40px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(20px);
+    text-align:center;
+    border-radius:30px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(25px);
+    border:1px solid rgba(255,255,255,.1);
     box-shadow:
-        0 0 40px rgba(0,0,0,0.6),
-        inset 0 0 20px rgba(255,255,255,0.1);
-    animation:float 4s ease-in-out infinite;
+    0 25px 60px rgba(0,0,0,.45),
+    inset 0 0 20px rgba(255,255,255,.05);
 }
 
 .profile{
-    width:120px;
-    height:120px;
+    width:130px;
+    height:130px;
     border-radius:50%;
     object-fit:cover;
-    border:3px solid #22c55e;
-    box-shadow:0 0 25px #22c55e;
+    border:4px solid #FFD700;
+    box-shadow:0 0 30px rgba(255,215,0,.6);
+    margin-bottom:20px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:50px;
+    background:rgba(255,215,0,.15);
+    color:#FFD700;
+    font-size:14px;
     margin-bottom:15px;
 }
 
 h1{
     color:white;
-    font-size:26px;
     margin-bottom:10px;
+    font-size:32px;
 }
 
 p{
-    color:#ccc;
-    margin-bottom:20px;
+    color:#cbd5e1;
+    line-height:1.7;
 }
 
-.btn{
-    display:inline-block;
-    padding:14px 30px;
-    background:linear-gradient(45deg,#22c55e,#4ade80);
-    border-radius:10px;
-    color:black;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.1);
+.timer{
+    margin:25px 0;
+    font-size:38px;
+    font-weight:700;
+    color:#FFD700;
 }
 
 .loader{
+    width:50px;
+    height:50px;
     margin:20px auto;
-    width:40px;
-    height:40px;
-    border:4px solid rgba(255,255,255,0.2);
-    border-top:4px solid #22c55e;
+    border:4px solid rgba(255,255,255,.15);
+    border-top:4px solid #FFD700;
     border-radius:50%;
     animation:spin 1s linear infinite;
 }
 
-@keyframes spin{
-    100%{transform:rotate(360deg);}
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:16px 36px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:700;
+    color:black;
+    background:linear-gradient(135deg,#FFD700,#F5C542);
+    transition:.3s;
 }
 
-@keyframes float{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.footer{
+    margin-top:25px;
+    color:#94a3b8;
+    font-size:13px;
+}
+
+.footer a{
+    color:#94a3b8;
+    text-decoration:none;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
 }
 </style>
-
-<script>
-    // Redirect after 3 seconds
-    setTimeout(function(){
-        window.location.href = "https://t.me/+07spjXcyQPs2NTQ9";
-    }, 3000); // 3 seconds
-</script>
-
 </head>
+
 <body>
 
 <div class="bg"></div>
 
 <div class="card">
-    <img src="photo.jpg" alt="Profile" class="profile">
 
-    <h1>🚀 𝘾𝙝𝙤𝙩𝙖 𝙙𝙖𝙡𝙖𝙡 𝙛𝙖𝙢𝙞𝙡𝙮 </h1>
-    <p>Please wait... Redirecting in 3 seconds</p>
+    <img src="photo.jpg" class="profile" alt="Profile">
+
+    <div class="badge">★ Official Access</div>
+
+    <h1>Join Our Community</h1>
+
+    <p>
+        Please wait while we prepare your access.
+        You will be redirected automatically.
+    </p>
+
+    <div class="timer" id="countdown">01:00:00</div>
 
     <div class="loader"></div>
 
-    <a href="https://t.me/+07spjXcyQPs2NTQ9" class="btn">
-        Join Now
+    <a href="https://t.me/+m-OKluECbcE4ODJl"
+       target="_blank"
+       onclick="fbq('track','Lead');"
+       class="btn">
+       Join Now
     </a>
+
+    <div class="footer">
+        <br>
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms</a> |
+        <a href="contact.html">Contact</a>
+    </div>
+
 </div>
+
+<script>
+let seconds = 3600; // 1 Hour
+
+const countdown = document.getElementById("countdown");
+
+const timer = setInterval(() => {
+
+    let h = Math.floor(seconds / 3600);
+    let m = Math.floor((seconds % 3600) / 60);
+    let s = seconds % 60;
+
+    countdown.innerHTML =
+        String(h).padStart(2,'0') + ":" +
+        String(m).padStart(2,'0') + ":" +
+        String(s).padStart(2,'0');
+
+    if(seconds <= 0){
+        clearInterval(timer);
+
+        if(typeof fbq !== 'undefined'){
+            fbq('track', 'Lead');
+        }
+
+        window.location.href = "https://t.me/+m-OKluECbcE4ODJl";
+    }
+
+    seconds--;
+
+}, 1000);
+</script>
 
 </body>
 </html>
