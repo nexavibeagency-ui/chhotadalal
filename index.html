@@ -3,251 +3,368 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Official Community Access</title>
+<meta name="description" content="Join our official WhatsApp channel for updates.">
 
-<meta name="description" content="Join our official community for updates and announcements.">
-
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1049800377475498');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1049800377475498&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI,Arial,sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    background:#050816;
+background:#000;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+overflow-x:hidden;
 }
 
-.bg{
-    position:fixed;
-    inset:0;
-    background:
-    radial-gradient(circle at 20% 20%,rgba(255,215,0,.15),transparent 30%),
-    radial-gradient(circle at 80% 80%,rgba(0,255,255,.12),transparent 30%),
-    linear-gradient(135deg,#020617,#0f172a,#111827);
-}
-
-.bg::before{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:rgba(255,215,0,.08);
-    border-radius:50%;
-    filter:blur(120px);
-    top:-150px;
-    left:-100px;
-}
-
-.bg::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:rgba(0,255,255,.06);
-    border-radius:50%;
-    filter:blur(120px);
-    bottom:-150px;
-    right:-100px;
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top,#00ff6a22,transparent 35%),
+radial-gradient(circle at bottom,#00ff6a15,transparent 35%);
+z-index:-1;
 }
 
 .card{
-    position:relative;
-    z-index:10;
-    width:90%;
-    max-width:500px;
-    padding:40px;
-    text-align:center;
-    border-radius:30px;
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(25px);
-    border:1px solid rgba(255,255,255,.1);
-    box-shadow:
-    0 25px 60px rgba(0,0,0,.45),
-    inset 0 0 20px rgba(255,255,255,.05);
+width:100%;
+max-width:520px;
+background:#050505;
+border:2px solid #2cff68;
+border-radius:30px;
+padding:30px;
+text-align:center;
+box-shadow:
+0 0 15px #2cff68,
+0 0 40px rgba(44,255,104,.25);
 }
 
-.profile{
-    width:130px;
-    height:130px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #FFD700;
-    box-shadow:0 0 30px rgba(255,215,0,.6);
-
-    display:block;
-    margin:0 auto 20px auto;
-}
-}
-
-.badge{
-    display:inline-block;
-    padding:8px 18px;
-    border-radius:50px;
-    background:rgba(255,215,0,.15);
-    color:#FFD700;
-    font-size:14px;
-    margin-bottom:15px;
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #2cff68;
+box-shadow:0 0 25px #2cff68;
+margin-bottom:20px;
 }
 
 h1{
-    color:white;
-    margin-bottom:10px;
-    font-size:32px;
+color:#fff;
+font-size:34px;
+font-weight:800;
+margin-bottom:10px;
 }
 
-p{
-    color:#cbd5e1;
-    line-height:1.7;
+.subtitle{
+font-size:22px;
+color:#fff;
+margin-bottom:25px;
 }
 
-.timer{
-    margin:25px 0;
-    font-size:38px;
-    font-weight:700;
-    color:#FFD700;
+.subtitle span{
+color:#2cff68;
+font-weight:700;
 }
 
-.loader{
-    width:50px;
-    height:50px;
-    margin:20px auto;
-    border:4px solid rgba(255,255,255,.15);
-    border-top:4px solid #FFD700;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
+.timer-box{
+border:1px solid #2cff68;
+border-radius:20px;
+padding:20px;
+background:#081108;
+box-shadow:0 0 15px rgba(44,255,104,.2);
+}
+
+.timer-title{
+color:#2cff68;
+font-size:20px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.count{
+font-size:75px;
+font-weight:900;
+color:#2cff68;
+line-height:1;
+}
+
+.seconds{
+color:#fff;
+letter-spacing:3px;
+margin-top:5px;
+}
+
+.progress{
+width:100%;
+height:16px;
+background:#111;
+border-radius:50px;
+overflow:hidden;
+margin-top:20px;
+border:1px solid #222;
+}
+
+#bar{
+width:100%;
+height:100%;
+background:linear-gradient(90deg,#66ff66,#2cff68);
+transition:1s linear;
+}
+
+.redirecting{
+margin-top:20px;
+font-size:24px;
+font-weight:700;
+color:#2cff68;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:16px 36px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:700;
-    color:black;
-    background:linear-gradient(135deg,#FFD700,#F5C542);
-    transition:.3s;
+display:block;
+margin-top:25px;
+padding:22px;
+background:linear-gradient(180deg,#46ff6b,#25d94c);
+color:#fff;
+text-decoration:none;
+font-size:28px;
+font-weight:800;
+border-radius:22px;
+box-shadow:0 0 25px rgba(44,255,104,.6);
+transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+transform:translateY(-3px);
+}
+
+.tap{
+margin-top:15px;
+color:#aaa;
+font-size:15px;
+}
+
+.features{
+margin-top:25px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.feature{
+background:#0a0a0a;
+border:1px solid #1f1f1f;
+padding:15px 10px;
+border-radius:12px;
+color:#fff;
+font-size:13px;
+line-height:1.5;
+}
+
+.icon{
+font-size:24px;
+color:#2cff68;
+display:block;
+margin-bottom:5px;
+}
+
+.managed{
+margin-top:25px;
+font-size:18px;
+color:#fff;
+}
+
+.managed span{
+color:#2cff68;
+font-weight:700;
+}
+
+.disclaimer{
+margin-top:20px;
+font-size:13px;
+color:#888;
+line-height:1.6;
 }
 
 .footer{
-    margin-top:25px;
-    color:#94a3b8;
-    font-size:13px;
+margin-top:15px;
+font-size:13px;
 }
 
 .footer a{
-    color:#94a3b8;
-    text-decoration:none;
+color:#aaa;
+text-decoration:none;
+margin:0 5px;
 }
 
-@keyframes spin{
-    100%{
-        transform:rotate(360deg);
-    }
+@media(max-width:600px){
+
+h1{
+font-size:28px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.btn{
+font-size:22px;
+padding:18px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.count{
+font-size:60px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="bg"></div>
-
 <div class="card">
 
-    <img src="photo.jpg" alt="Profile" class="profile">
+<img src="photo.jpg" alt="Logo" class="logo">
 
-    <div class="badge">★ Official Access</div>
+<h1>𝘾𝙝𝙤𝙩𝙖 𝘿𝙖𝙡𝙖𝙡 𝙁𝙖𝙢𝙞𝙡𝙮 ✅</h1>
 
-    <h1>𝘾𝙝𝙤𝙩𝙖 𝙙𝙖𝙡𝙖𝙡 𝙛𝙖𝙢𝙞𝙡𝙮</h1>
+<div class="subtitle">
+Follow Our <span>WhatsApp</span> Channel!
+</div>
 
-    <p>
-        Please wait while we prepare your access.
-        You will be redirected automatically.
-    </p>
+<div class="timer-box">
 
-    <div class="timer" id="countdown">00:00:05</div>
+<div class="timer-title">
+⚡ AUTO FOLLOW IN
+</div>
 
-    <div class="loader"></div>
+<div id="countdown" class="count">05</div>
 
-    <a href="https://whatsapp.com/channel/0029VbDc25Q29759NP3pPs0k"
-       target="_blank"
-       onclick="fbq('track','Lead');"
-       class="btn">
-       Join Now
-    </a>
+<div class="seconds">
+SECONDS
+</div>
 
-    <div class="disclaimer" style="margin-top:20px;color:#94a3b8;font-size:13px;line-height:1.6;">
-        This website provides access to a community platform.
-        Users join voluntarily by clicking the button above.
-    </div>
+<div class="progress">
+<div id="bar"></div>
+</div>
 
-    <div class="footer">
-        <br>
-        <a href="privacy.html">Privacy Policy</a> |
-        <a href="terms.html">Terms of Service</a> |
-        <a href="contact.html">Contact</a>
-    </div>
+</div>
+
+<div class="redirecting">
+✅ Redirecting now...
+</div>
+
+<a href="https://whatsapp.com/channel/0029VbDc25Q29759NP3pPs0k"
+class="btn"
+onclick="fbq('track','Lead');">
+📱 FOLLOW WHATSAPP CHANNEL
+</a>
+
+<div class="tap">
+Tap above if not redirected automatically
+</div>
+
+<div class="features">
+
+<div class="feature">
+<span class="icon">🔔</span>
+Instant<br>Updates
+</div>
+
+<div class="feature">
+<span class="icon">🛡️</span>
+Official<br>Channel
+</div>
+
+<div class="feature">
+<span class="icon">🔓</span>
+100% Free<br>Access
+</div>
+
+<div class="feature">
+<span class="icon">👥</span>
+No Spam<br>Promise
+</div>
+
+</div>
+
+<div class="managed">
+Managed by <span>Chota Dalal Family</span> ✅
+</div>
+
+<div class="disclaimer">
+This website provides access to a community platform.
+Users join voluntarily by clicking the button above.
+</div>
+
+<div class="footer">
+<a href="privacy.html">Privacy Policy</a> |
+<a href="terms.html">Terms & Conditions</a> |
+<a href="contact.html">Contact Us</a>
+</div>
 
 </div>
 
 <script>
-let seconds = 5; // 5 Seconds
+
+let seconds = 5;
 
 const countdown = document.getElementById("countdown");
+const bar = document.getElementById("bar");
 
 const timer = setInterval(() => {
 
-    let h = Math.floor(seconds / 3600);
-    let m = Math.floor((seconds % 3600) / 60);
-    let s = seconds % 60;
+countdown.innerText = String(seconds).padStart(2,"0");
 
-    countdown.innerHTML =
-        String(h).padStart(2,'0') + ":" +
-        String(m).padStart(2,'0') + ":" +
-        String(s).padStart(2,'0');
+bar.style.width = (seconds/5)*100 + "%";
 
-    if(seconds <= 0){
-        clearInterval(timer);
+if(seconds <= 0){
 
-        if(typeof fbq !== 'undefined'){
-            fbq('track', 'Lead');
-        }
+clearInterval(timer);
 
-        window.location.href = "https://whatsapp.com/channel/0029VbDc25Q29759NP3pPs0k";
-    }
+if(typeof fbq !== "undefined"){
+fbq('track','Lead');
+}
 
-    seconds--;
+window.location.href =
+"https://whatsapp.com/channel/0029VbDc25Q29759NP3pPs0k";
 
-}, 1000);
+}
+
+seconds--;
+
+},1000);
+
 </script>
 
 </body>
